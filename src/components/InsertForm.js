@@ -10,7 +10,7 @@ export default function InsertForm({ onAddItem }) {
 
         const newItem = { text };
         // Save item to server
-        const promise = axios.post('http://localhost:4000/item', text);
+        const promise = axios.post('http://localhost:4000/items', newItem);
         setText('');
         onAddItem();
     }
